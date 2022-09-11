@@ -2,13 +2,17 @@
   "name": "reactapp",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://felipeandree.github.io/listadepresenca",
   "type": "module",
   "scripts": {
+    "pre-deploy": "npm run buid",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
